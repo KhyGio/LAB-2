@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration | Cyber-LAW</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="form-frame">
+        <h1>Event Registration Form</h1>
+        
+        <h3>About This Event</h3>
+        <table class="event-table">
+            <tr>
+                <th>Event Name</th>
+                <td>Can AI be a hacking tool?</td>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <td>November 18, 2026</td>
+            </tr>
+            <tr>
+                <th>Time</th>
+                <td>8:00 AM - 11:00 AM</td>
+            </tr>
+            <tr>
+                <th>Speaker</th>
+                <td>Anonymous</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <form>
+            <h3>Participant Information</h3>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-group">
+                    <label for="dateofbirth">Date of Birth</label>
+                    <input type="date" id="dateofbirth" name="dateofbirth">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-inline">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+            </div>
+
+            <div class="event-source-section">
+                <label>Where did you hear about this Event?</label>
+                <div class="source-options">
+                    <label><input type="radio" name="source" value="facebook"> Facebook</label>
+                    <label><input type="radio" name="source" value="youtube"> Youtube</label>
+                    <label><input type="radio" name="source" value="instagram"> Instagram</label>
+                    <label><input type="radio" name="source" value="twitter"> Twitter</label>
+                </div>
+                <label for="other">Other:</label>
+                <input type="text" id="other" name="other" class="full-width">
+            </div>
+
+            <hr>
+
+            <h3>Payment Information</h3>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="tickets">Number of Tickets</label>
+                    <input type="number" id="tickets" name="tickets" min="1">
+                </div>
+                <div class="form-group">
+                    <label>Payment Method</label>
+                    <div class="payment-methods">
+                        <label><input type="radio" name="payment" value="credit"> Credit</label>
+                        <label><input type="radio" name="payment" value="debit"> Debit</label>
+                        <label><input type="radio" name="payment" value="cash"> Cash</label>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="form-row bottom-section">
+                <div class="form-group flex-1-5">
+                    <p class="cyber-disclaimer">
+                        This Event is for Education and Self Defense Only! Anyone who commits a crime will face the judge of Cyber-LAW.
+                    </p>
+                    <label class="agreement">
+                        <input type="radio" name="legal_confirm" required> Yes, I understand.
+                    </label>
+                </div>
+
+                <div class="form-group flex-1">
+                    <label for="signature">Signature</label>
+                    <input type="text" id="signature" name="signature" placeholder="Electronic Signature">
+                    
+                    <label for="date-sig" style="margin-top: 15px;">Date Signature</label>
+                    <input type="date" id="date-sig" name="date-sig">
+                </div>
+            </div>
+
+            <input type="submit" value="Register" class="register-btn">
+        </form>
+    </div >
+</body>
+</html>
