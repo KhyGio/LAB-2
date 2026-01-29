@@ -1,2 +1,2 @@
-# LAB-1
+# LAB-2
 HTML LAB
